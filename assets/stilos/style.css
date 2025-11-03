@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    text-align: center;
+    background-image: url(../images/banner.png);
+    background-color: rgb(10, 77, 77);
+    background-repeat: no-repeat;
+    background-position: top;
+} 
+.banner-content{
+    margin: auto;
+    width: 510px;
+    height: 393px;
+    padding-top: 56px;
+
+}
+.logo{
+    width: 268px;
+    height: 268px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: auto;
+    
+}
+img{
+    width: 248px;
+    height: 214px;
+    margin-top: 27px;
+}
+header h1 {
+    font-family: "Raleway";
+    border: 1px solid grey;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(rgba(51, 168, 219, 1), rgba(20, 114, 183, 1));
+
+}
