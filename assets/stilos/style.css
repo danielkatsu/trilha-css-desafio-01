@@ -1,42 +1,183 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
+    font-family: "Raleway";
     padding: 0;
     margin: 0;
 }
-header{
+
+/*Cabecalho*/
+header {
     text-align: center;
-    background-image: url(../images/banner.png);
-    background-color: rgb(10, 77, 77);
-    background-repeat: no-repeat;
-    background-position: top;
-} 
-.banner-content{
+    background-image: url(/assets/images/banner.png), linear-gradient( rgb(0, 0, 0), rgb(11, 40, 53), rgb(0, 0, 0, 1));
+    border-bottom: 1px solid rgb(8, 83, 115);
+}
+
+/*Banner*/
+header .banner-content {
     margin: auto;
     width: 510px;
-    height: 393px;
+    height: 100%;
     padding-top: 56px;
-
 }
-.logo{
+
+/*Sombra do Logo*/
+header .logo {
     width: 268px;
     height: 268px;
     border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.2);
     margin: auto;
-    
+
 }
-img{
+
+ .banner img {
     width: 248px;
     height: 214px;
     margin-top: 27px;
 }
-header h1 {
-    font-family: "Raleway";
-    border: 1px solid grey;
+
+.banner h1 {
+
+    width: 434px;
+    height: 47px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin: 20px auto 10px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 40px;
     -webkit-background-clip: text;
     color: transparent;
     background-clip: text;
-    background-image: linear-gradient(rgba(51, 168, 219, 1), rgba(20, 114, 183, 1));
+    background-image: linear-gradient(to bottom, rgba(51, 168, 219, 1), rgba(20, 114, 183, 1));
+}
 
+.banner p {
+    font-weight: 400;
+    font-size: 19px;
+    color: white;
+    line-height: 100%;
+    letter-spacing: 0%;
+    height: 46px;
+
+}
+
+.banner button {
+    width: 326;
+    height: 57;
+    padding: 19px 91px;
+    margin: 10px auto 40px;
+    font-weight: 800;
+    text-transform: uppercase;
+    border: 2px solid rgba(59, 161, 205, 1);
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(to bottom, rgba(51, 168, 219, 1), rgba(20, 114, 183, 1));
+
+}
+
+/*Corpo Principal*/
+main{
+    background-color: rgb(0,0,0,1);
+}
+#course-content {
+    width: 792px;
+    height: 325px;
+    margin: auto;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+#course-content h2 {
+    padding: 40px 0px 20px;
+    line-height: 100%;
+    font-size: 25px;
+    font-weight: 700;
+}
+#course-content p{
+    text-align: center;
+}
+#course-content .module {
+    width: 535px;
+    height: 51px;
+    margin: 25px auto 0px;
+    background-color: rgba(37, 37, 37, 1);
+    border-radius: 57px;
+    border:1px solid rgba(51, 168, 219, 1);
+    box-shadow: -2px 6px 4px 0px rgba(0, 0, 0, 0.4) inset;
+    -webkit-user-modify: read-write-plaintext-only;
+}
+#course-content .modules-list span {
+    color: rgb(87, 165, 221);
+}
+/*Imagem fixa na tela*/
+#transform-world {
+    margin-top: 100px;
+    height: 250px;
+    background-image: url(/assets/images/woman-code.png);
+    background-size: cover;
+    background-position: center;
+    border-top: 1px solid rgb(11, 79, 108);
+    border-bottom: 1px solid rgba(11, 79, 108, 1);
+    background-attachment: fixed;
+}
+#transform-world p {
+text-underline-position: auto;
+display: block;
+    width: 122px;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 3px 2px rgba(51, 168, 219, 1);
+    padding: 100px 0px 0px 100px;
+}
+/*H2 da professional-challenges*/
+#professional-challenges h2 {
+    margin: 50px auto 30px;
+    text-align: center;
+    max-width: 746px;
+}
+#professional-challenges img{
+    margin: 10px auto;
+    display: block;
+}
+#professional-challenges p{
+    color: white;
+    max-width: 774px;
+    text-align: center;
+    margin: 0px auto 0px;
+    padding: 5px 0px 80px;
+}
+/*Footer*/ 
+footer {
+    background-image: linear-gradient(rgb(0, 0, 0),  rgb(3, 14, 19));
+    border-top: 1px solid rgba(11, 79, 108, 1);
+}
+footer img {
+    padding-top: 10px;
+    margin: auto;
+    display: block;
+}
+footer p{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    line-height: 100%;
+}
+footer a{
+    text-decoration: none;
+    color: rgba(51, 168, 219, 1);
+}
+/*Tags Padroes*/
+
+h2 {
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(rgba(51, 168, 219, 1));
 }
